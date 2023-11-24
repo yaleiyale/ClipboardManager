@@ -30,7 +30,7 @@
           </template>
           <template v-if="item.type === 'image'">
             <img class="clip-data-image" :src="item.data" alt="Image" />
-            <a :href="item.data" :download="new Date(item.createTime).toLocaleString()">保存图片</a>
+            <a class ="clip-data-a" :href="item.data" :download="new Date(item.createTime).toLocaleString()">保存图片</a>
           </template>
           <template v-if="item.type === 'file'">
             <div
